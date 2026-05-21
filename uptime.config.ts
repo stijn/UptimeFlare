@@ -72,37 +72,6 @@ const workerConfig: WorkerConfig = {
         Authorization: 'Bearer YOUR_TOKEN_HERE',
       }, // <-- Closes the headers object
     }, // <-- Closes the third monitor object
-
-    // -------------------------------------
-    // Monitor 4: nationstates_homepage
-    // -------------------------------------
-    {
-      id: 'nationstates_homepage',
-      name: 'NationStates Net Main Site',
-      method: 'GET',
-      target: 'https://www.nationstates.net',
-      tooltip: 'Primary homepage monitor',
-      statusPageLink: 'https://www.nationstates.net',
-      expectedCodes: [200],
-      timeout: 10000,
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      }, // <-- Closes the headers object
-    }, // <-- Closes the fourth monitor object
-
-    // -------------------------------------
-    // Monitor 5: test_tcp_monitor
-    // -------------------------------------
-    {
-      id: 'test_tcp_monitor',
-      name: 'Eurth Org TCP Monitor',
-      method: 'TCP_PING',
-      target: '195.201.8.159:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://eurth.org',
-      timeout: 5000,
-    }, // <-- Closes the fifth monitor object
   ], // <-- Closes the monitors array
 
   // [Optional] Notification settings
