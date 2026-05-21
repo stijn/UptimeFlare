@@ -7,12 +7,12 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "Eurth Community Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/stijn', label: 'GitHub' },
+    { link: 'https://eurth.org/', label: 'Forum' },
+    { link: 'mailto:orioni.europa@gmail.com', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -22,7 +22,7 @@ const workerConfig: WorkerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'eurth°homepage',
+      id: 'eurth_homepage',
       // `name` is used at status page and callback message
       name: 'Eurth Org Main Site',
       // `method` should be a valid HTTP Method
@@ -58,13 +58,13 @@ const workerConfig: WorkerConfig = {
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      name: 'Eurth Org TCP Monitor',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
+      target: '91.181.10.147:22',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://eurth.org',
       timeout: 5000,
     },
   ],
@@ -97,7 +97,7 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: 'Asia/Shanghai',
+    timeZone: 'Europe/London',
     // [Optional] grace period in minutes before sending a notification
     // notification will be sent only if the monitor is down for N continuous checks after the initial failure
     // if not specified, notification will be sent immediately
