@@ -8,6 +8,9 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 const pageConfig: PageConfig = {
   // Title for your status page
   title: "Eurth Community Status Page",
+  // FORCE MONITOR LOCATION (Cloudflare Airport Codes)
+  // Use 'https://workers.dev' for London or 'https://workers.dev' for US East
+  checkLocationWorkerRoute: 'https://workers.dev',
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/stijn', label: 'GitHub' },
