@@ -32,7 +32,76 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'Primary homepage monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://eurth.org.com',
+      statusPageLink: 'https://eurth.org',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+        Authorization: 'Bearer YOUR_TOKEN_HERE',
+      },
+    // Example HTTP Monitor
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'europans_homepage',
+      // `name` is used at status page and callback message
+      name: 'Europans Com Main Site',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://www.europans.com',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Primary homepage monitor',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://www.europans.com',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+        Authorization: 'Bearer YOUR_TOKEN_HERE',
+      },
+      // Example HTTP Monitor
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'iiwiki_homepage',
+      // `name` is used at status page and callback message
+      name: 'IIWiki Com Main Site',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://iiwiki.com',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Primary homepage monitor',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://iiwiki.com',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+        Authorization: 'Bearer YOUR_TOKEN_HERE',
+      },
+    // Example HTTP Monitor
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'nationstates_homepage',
+      // `name` is used at status page and callback message
+      name: 'NationStates Net Main Site',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://www.nationstates.net',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Primary homepage monitor',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://www.nationstates.net',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
@@ -62,7 +131,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '91.181.10.147:22',
+      target: '195.201.8.159:22',
       tooltip: 'My production server SSH',
       statusPageLink: 'https://eurth.org',
       timeout: 5000,
@@ -113,6 +182,7 @@ const workerConfig: WorkerConfig = {
 // const maintenances: MaintenanceConfig[] = []
 
 const maintenances: MaintenanceConfig[] = [
+  /*
   {
     // [Optional] Monitor IDs to be affected by this maintenance
     monitors: ['foo_monitor', 'bar_monitor'],
@@ -128,6 +198,7 @@ const maintenances: MaintenanceConfig[] = [
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'blue',
   },
+  */
 ]
 
 // Don't edit this line
