@@ -10,7 +10,7 @@ const pageConfig: PageConfig = {
   title: "Eurth Community Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/stijn', label: 'GitHub' },
+    { link: 'https://github.com/stijn/UptimeFlare', label: 'GitHub' },
     { link: 'https://eurth.org/', label: 'Forum' },
     { link: 'mailto:orioni.europa@gmail.com', label: 'Email Me', highlight: true },
   ],
