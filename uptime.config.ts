@@ -24,7 +24,7 @@ const workerConfig: WorkerConfig = {
     // -------------------------------------
     {
       id: 'eurth_homepage',
-      name: 'Eurth Org Main Site',
+      name: 'eurth.org',
       method: 'GET',
       target: 'https://eurth.org',
       tooltip: 'Primary homepage monitor',
@@ -42,7 +42,7 @@ const workerConfig: WorkerConfig = {
     // -------------------------------------
     {
       id: 'europans_homepage',
-      name: 'Europans Com Main Site',
+      name: 'eeuropans.com',
       method: 'GET',
       target: 'https://www.europans.com',
       tooltip: 'Primary homepage monitor',
@@ -60,7 +60,7 @@ const workerConfig: WorkerConfig = {
     // -------------------------------------
     {
       id: 'iiwiki_homepage',
-      name: 'IIWiki Com Main Site',
+      name: 'iiwiki.com',
       method: 'GET',
       target: 'https://iiwiki.com',
       tooltip: 'Primary homepage monitor',
