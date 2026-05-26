@@ -42,7 +42,7 @@ const workerConfig: WorkerConfig = {
     // -------------------------------------
     {
       id: 'europans_homepage',
-      name: 'eeuropans.com',
+      name: 'europans.com',
       method: 'GET',
       target: 'https://www.europans.com',
       tooltip: 'Primary homepage monitor',
