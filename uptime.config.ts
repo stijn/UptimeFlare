@@ -57,24 +57,6 @@ const workerConfig: WorkerConfig = {
       }, // <-- Closes the headers object
     }, // <-- Closes the second monitor object
 
-    // -------------------------------------
-    // Monitor 3: iiwiki_homepage
-    // -------------------------------------
-    {
-      id: 'iiwiki_homepage',
-      name: 'iiwiki.com',
-      method: 'GET',
-      target: 'https://iiwiki.com',
-      checkProxy: 'worker://weur',
-      tooltip: 'Primary homepage monitor',
-      statusPageLink: 'https://iiwiki.com',
-      expectedCodes: [200],
-      timeout: 10000,
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      }, // <-- Closes the headers object
-    }, // <-- Closes the third monitor object
   ], // <-- Closes the monitors array
 
   // [Optional] Notification settings
